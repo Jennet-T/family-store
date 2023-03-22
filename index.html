@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://theapicompany.com/deviceAPI.js?id=deviceAPI-123456"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Family Store</title>
+</head>
+<body>
+    
+    <div id="body">
+
+        <div id="table">
+
+            <div id="pyaterycka" class="store">
+                <div class="header" onclick="ShowHideProducts(this)">
+                    <i class="header_text">Pyaterycka</i>
+                    <div class="angle_down">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Chipsi</h3>
+                    </div>
+
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Kolbasa</h3>
+                    </div>
+
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Yumurta</h3>
+                    </div>
+
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Sharik</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="magnit" class="store">
+                <div class="header" onclick="ShowHideProducts(this)">
+                    <i class="header_text">Magnit</i>
+                    <div class="angle_down">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Yogurt</h3>
+                    </div>
+                    
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Piwo</h3>
+                    </div>
+                    
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">ChupaChups</h3>
+                    </div>
+                    
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Naski</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fix_price" class="store">
+                <div class="header" onclick="ShowHideProducts(this)">
+                    <i class="header_text">Fix Price</i>
+                    <div class="angle_down">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Weshalka</h3>
+                    </div>
+                    
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Dapdar</h3>
+                    </div>
+                    
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Rucka</h3>
+                    </div>
+                    
+                    <div class="product" onclick="CheckProduct(this)">
+                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <h3 class="product_name">Korzina</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+<!--
+    CREATE TABLE `family_store`.`products` 
+    (`id` INT NOT NULL AUTO_INCREMENT , 
+    `name` VARCHAR(100) NOT NULL , 
+    `added_date` DATE NOT NULL , 
+    `magazin` VARCHAR(30) NOT NULL , 
+    `bought_date` DATE NOT NULL , 
+    PRIMARY KEY (`id`)) ENGINE = MyISAM;
+-->
