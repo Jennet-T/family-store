@@ -12,11 +12,54 @@
     
     <div id="body">
 
+        <div id="add">
+
+            <div id="add_table">
+
+                <div id="produkta">
+                    Produtka: <input type="text" id="produkta_input" value="Piyaz" required>
+                </div>
+                <div id="amount">
+                    Kanca: <input type="number" value="3" id="amount_input">
+                    <select name="" id="amount_ta_kg">
+                        <option value="ta">ta</option>
+                        <option value="kg">kg</option>
+                    </select>
+                </div>
+                <div id="magazin">
+                    Magazin: <select name="" id="magazin_select">
+                        <option value="Pyaterycka">Pyaterycka</option>
+                        <option value="Fix Price">Fix Price</option>
+                        <option value="Ozon">Ozon</option>
+                        <option value="Magnit kosmetik">Magnit kosmetik</option>
+                        <option value="Kansler">Kansler</option>
+                        <option value="Magnit">Magnit</option>
+                    </select>
+                </div>
+                <div id="add_submit_div">
+                    <input type="submit" 
+                        style="background-color: rgb(245, 252, 252);" 
+                        value="Add" 
+                        id="add_submit" 
+                        onclick="Dobaw()">
+                </div>
+
+            </div>
+            <div id="dobaw_button" onclick="DragAdd(this)">
+                <div class="letter">D</div>
+                <div class="letter">o</div>
+                <div class="letter">b</div>
+                <div class="letter">a</div>
+                <div class="letter">w</div>
+            </div>
+
+        </div>
+
         <div id="table">
 
-            <div id="pyaterycka" class="store">
+            <div id="shablon" class="store">
                 <div class="header" onclick="ShowHideProducts(this)">
-                    <i class="header_text">Pyaterycka</i>
+                    <i class="header_text"></i>
                     <div class="angle_down">
                         <i class="fas fa-angle-down"></i>
                     </div>
@@ -24,27 +67,12 @@
 
                 <div class="products">
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
-                        <h3 class="product_name">Chipsi</h3>
-                    </div>
-
-                    <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
-                        <h3 class="product_name">Kolbasa</h3>
-                    </div>
-
-                    <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
-                        <h3 class="product_name">Yumurta</h3>
-                    </div>
-
-                    <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
-                        <h3 class="product_name">Sharik</h3>
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
+                        <h3 class="product_name"></h3>
                     </div>
                 </div>
             </div>
-
+<!--
             <div id="magnit" class="store">
                 <div class="header" onclick="ShowHideProducts(this)">
                     <i class="header_text">Magnit</i>
@@ -54,22 +82,22 @@
                 </div>
                 <div class="products">
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
                         <h3 class="product_name">Yogurt</h3>
                     </div>
                     
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
                         <h3 class="product_name">Piwo</h3>
                     </div>
                     
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
                         <h3 class="product_name">ChupaChups</h3>
                     </div>
                     
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
                         <h3 class="product_name">Naski</h3>
                     </div>
                 </div>
@@ -84,26 +112,26 @@
                 </div>
                 <div class="products">
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
                         <h3 class="product_name">Weshalka</h3>
                     </div>
                     
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
                         <h3 class="product_name">Dapdar</h3>
                     </div>
                     
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
                         <h3 class="product_name">Rucka</h3>
                     </div>
                     
                     <div class="product" onclick="CheckProduct(this)">
-                        <input type="checkbox" onclick="CheckProduct()" name="" id="" class="product_checkbox">
+                        <input type="checkbox" onclick="CheckProduct()" class="product_checkbox">
                         <h3 class="product_name">Korzina</h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 

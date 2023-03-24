@@ -13,6 +13,59 @@ body{
     margin-top: 15px;
 }
 
+#add{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: none; */
+}
+
+#add_table{
+    border: 1px solid black;
+    background-color: azure;
+    padding: 10px;
+    float: left;
+    /* display: inline-block; */
+}
+
+#add_table div{
+    margin: 7px 0;
+}
+
+#add_table input, #add_table select{
+    background-color: azure;
+}
+
+#add_table #amount input{
+    width: calc(60px + 10vw);
+}
+
+#add_submit_div{
+    text-align: center;
+}
+
+#add_submit{
+    padding: 2px 20px;
+    margin-top: 2px;
+}
+
+#dobaw_button{
+    float: left;
+    background-color: floralwhite;
+    padding: 5px 7px 5px 10px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#dobaw_button .letter{
+    line-height: 13px;
+}
+#dobaw_button .letter:first-child, #dobaw_button .letter:last-child{
+    margin-left: -1.5px;
+}
+
 #table{
     /* border: solid 1px black; */
     margin: 50px auto;
@@ -24,6 +77,10 @@ body{
 
 .store{
     margin: 1.5px 0px;
+}
+
+#shablon{
+    display: none;
 }
 
 .header{
@@ -45,12 +102,14 @@ header:active{
 .angle_down{
     float: right;
     margin: 4px 0px;
+    height: 0px;
 }
 
 .products{
     /* background-color: rgb(180, 228, 200); */
     /* display: none; */
     width: auto;
+    overflow: hidden;
 }
 
 .product{
@@ -68,15 +127,16 @@ header:active{
     font-weight: normal;
     margin-left: 3px;
     line-height: 5px;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+.product_name.clicked{
+    border-bottom: 1px solid black;
 }
 
 .product_checkbox{
     width: 15px;
     height: 15px;
     margin-top: 3px;
-}
-
-hr{
-    height: 0.01px;
-    color: gray;
 }
