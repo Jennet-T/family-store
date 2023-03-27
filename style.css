@@ -21,7 +21,7 @@ body{
 }
 
 #add_table{
-    border: 1px solid black;
+    border: 2px solid rgb(147, 173, 173);
     background-color: azure;
     padding: 10px;
     float: left;
@@ -34,6 +34,7 @@ body{
 
 #add_table input, #add_table select{
     background-color: azure;
+    border-width: 0.3px;
 }
 
 #add_table #amount input{
