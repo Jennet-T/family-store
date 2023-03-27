@@ -1,6 +1,6 @@
 <?php
 
-    $con = new mysqli('localhost', 'root', '', 'family_store');
+    $con = new mysqli('localhost', 'root', '', 'family_store', 3308);
 
     if($con->connect_error)
     {
